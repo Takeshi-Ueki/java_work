@@ -13,5 +13,6 @@ public class for1 {
             System.out.println("昭和" + shouwa + "年です");  
             seireki++;
         } 
+        sc.close();
     }
 }

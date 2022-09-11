@@ -6,5 +6,7 @@ public class scanner1 {
 		System.out.print("入力してください");
 		String val = sc.next();
 		System.out.println(val);
+		
+		sc.close();
 	}
 }
