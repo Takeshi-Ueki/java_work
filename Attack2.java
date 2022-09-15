@@ -22,5 +22,7 @@ public class Attack2 {
         
         System.out.println(array[attack] + "に会心の一撃!");
         System.out.println(array[attack] + "を倒した。");
+        
+        sc.close();
 	}
 }
