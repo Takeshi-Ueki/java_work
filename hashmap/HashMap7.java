@@ -26,6 +26,8 @@ public class HashMap7 {
         
         for (String item : items) {
             System.out.println("<img src='" + itemImages.get(item) + "'><br>");
-        } 
+        }
+        
+        sc.close();
     }
 }
