@@ -19,18 +19,24 @@ public class Algo5 {
         
         int k = sc.nextInt();
         
+        // 最大値を初期化        
         int maximum = 10000;
         
+        // ２回繰り返す        
         for (int i = 0; i < k; i++) {
-            int nextMaximum = -10000;
+        	// maximum の次に大きい値を入れる変数を初期化            
+        	int nextMaximum = -10000;
             
+        	//　maximumと配列a の要素を比較         	
             for (int value : a) {
+            	// maximumより大きいか          	
                 if (value < maximum) {
                 	System.out.println(value + "<" + nextMaximum);
+                	// maximum以外で一番大きい要素をnextMaximumに入れる
                     nextMaximum = Math.max(nextMaximum, value);
-                } 
-                System.out.println(value);
+                }
             }
+            // maximumの次に大きい値をmaximumに入れる            
             maximum = nextMaximum;
             System.out.println(i + 1 + "回目 " + maximum);
             System.out.println("----------");
